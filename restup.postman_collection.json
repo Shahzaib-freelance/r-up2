@@ -1,0 +1,914 @@
+{
+	"info": {
+		"_postman_id": "bf377ee9-e07e-452d-9478-2b336a591827",
+		"name": "restup",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "127.0.0.1:9091/signup",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "firstname",
+							"value": "samina",
+							"type": "text"
+						},
+						{
+							"key": "lastname",
+							"value": "malik",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "saminanew4@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "12345678",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "+923348809842",
+							"type": "text"
+						},
+						{
+							"key": "gender",
+							"value": "female",
+							"type": "text"
+						},
+						{
+							"key": "imageUrl",
+							"type": "file",
+							"src": "/C:/Users/Public/Pictures/Sample Pictures/Tulips.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "127.0.0.1:9091/signup",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "9091",
+					"path": [
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create offer",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MGQ3N2ZiM2Y3MTU0OTFhOTgyYjJiNzIiLCJmaXJzdG5hbWUiOiJTYW1pbmEiLCJsYXN0bmFtZSI6Ik1hbGlrIiwicGhvbmUiOiIrOTIzMzQ4ODA5ODQyIiwiZ2VuZGVyIjoiRmVtYWxlIiwiaWF0IjoxNjI1NzcyMDMxLCJleHAiOjE2NTczMDgwMzF9.8BkCueYwPpTu9TuNJaMB4S8CaPcGTwZzOn3IW2YGDVo",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "restaurantId",
+							"value": "60d8b1e9ae19101fa4cd331a",
+							"type": "text"
+						},
+						{
+							"key": "category",
+							"value": "xyz",
+							"type": "text"
+						},
+						{
+							"key": "offerName",
+							"value": "taco",
+							"type": "text"
+						},
+						{
+							"key": "offerOn",
+							"value": "taco",
+							"type": "text"
+						},
+						{
+							"key": "offerPercent",
+							"value": "50",
+							"type": "text"
+						},
+						{
+							"key": "offerType",
+							"value": "Limited",
+							"type": "text"
+						},
+						{
+							"key": "imageUrl",
+							"type": "file",
+							"src": "/C:/Users/Public/Pictures/Sample Pictures/Lighthouse.jpg"
+						},
+						{
+							"key": "offerPrice",
+							"value": "400",
+							"type": "text"
+						},
+						{
+							"key": "tags",
+							"value": "taco",
+							"type": "text"
+						},
+						{
+							"key": "startDate",
+							"value": "12-12-2021",
+							"type": "text"
+						},
+						{
+							"key": "endDate",
+							"value": "12-12-2021",
+							"type": "text"
+						},
+						{
+							"key": "noGuests",
+							"value": "3",
+							"type": "text"
+						},
+						{
+							"key": "limit",
+							"value": "20",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "127.0.0.1:9091/discount/create",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "9091",
+					"path": [
+						"discount",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add restaurant",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MGQ3N2ZiM2Y3MTU0OTFhOTgyYjJiNzIiLCJmaXJzdG5hbWUiOiJTYW1pbmEiLCJsYXN0bmFtZSI6Ik1hbGlrIiwicGhvbmUiOiIrOTIzMzQ4ODA5ODQyIiwiZ2VuZGVyIjoiRmVtYWxlIiwiaWF0IjoxNjI0ODE0MDQ2LCJleHAiOjE2NTYzNTAwNDZ9._GI4seWD4HMZxLDh2Anq9d5g4YywwzVYUoq0yEU_-u4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"XYZ\",\r\n\"about\":\"heyits new one \",\r\n\"phone\":\"676767\",\r\n\"lat\":\"74\",\r\n\r\n    \"lng\":\"35\",\r\n\"averagePrice\":90,\r\n\"workTime\":\"0800\",\r\n\"timeReciept\":\"0900\",\r\n\"website\":\"www.xyz.com\",\r\n\"social\":\"www.ff.com\",\r\n\r\n\"personPerTable\":6,\r\n\"smoking\":2,\r\n\r\n\"nonSmoking\":5\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:9091/restaurant/add",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "9091",
+					"path": [
+						"restaurant",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "complete profile",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstname\":\"Samina\",\r\n\"lastname\":\"Malik\",\r\n\"password\":\"12345678\",\r\n\"gender\":\"Female\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:9091/signup/completeprofile/60d77fb3f715491a982b2b72",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "9091",
+					"path": [
+						"signup",
+						"completeprofile",
+						"60d77fb3f715491a982b2b72"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "127.0.0.1:9091/signin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"phone\":\"+923348809842\",\r\n\"password\":\"12345678\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:9091/signin",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "9091",
+					"path": [
+						"signin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get restaurants",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MGQ3N2ZiM2Y3MTU0OTFhOTgyYjJiNzIiLCJmaXJzdG5hbWUiOiJTYW1pbmEiLCJsYXN0bmFtZSI6Ik1hbGlrIiwicGhvbmUiOiIrOTIzMzQ4ODA5ODQyIiwiZ2VuZGVyIjoiRmVtYWxlIiwiaWF0IjoxNjI0ODE0MDQ2LCJleHAiOjE2NTYzNTAwNDZ9._GI4seWD4HMZxLDh2Anq9d5g4YywwzVYUoq0yEU_-u4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:9091/restaurant",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "9091",
+					"path": [
+						"restaurant"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get offers",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MGQ3N2ZiM2Y3MTU0OTFhOTgyYjJiNzIiLCJmaXJzdG5hbWUiOiJTYW1pbmEiLCJsYXN0bmFtZSI6Ik1hbGlrIiwicGhvbmUiOiIrOTIzMzQ4ODA5ODQyIiwiZ2VuZGVyIjoiRmVtYWxlIiwiaWF0IjoxNjI0ODE0MDQ2LCJleHAiOjE2NTYzNTAwNDZ9._GI4seWD4HMZxLDh2Anq9d5g4YywwzVYUoq0yEU_-u4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:9091/discount",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "9091",
+					"path": [
+						"discount"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get restaurant offers",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MGQ3N2ZiM2Y3MTU0OTFhOTgyYjJiNzIiLCJmaXJzdG5hbWUiOiJTYW1pbmEiLCJsYXN0bmFtZSI6Ik1hbGlrIiwicGhvbmUiOiIrOTIzMzQ4ODA5ODQyIiwiZ2VuZGVyIjoiRmVtYWxlIiwiaWF0IjoxNjI0ODE0MDQ2LCJleHAiOjE2NTYzNTAwNDZ9._GI4seWD4HMZxLDh2Anq9d5g4YywwzVYUoq0yEU_-u4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:9091/discount/getrestaurantoffers/60d8b1e9ae19101fa4cd331a",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "9091",
+					"path": [
+						"discount",
+						"getrestaurantoffers",
+						"60d8b1e9ae19101fa4cd331a"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get single offer",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MGQ3N2ZiM2Y3MTU0OTFhOTgyYjJiNzIiLCJmaXJzdG5hbWUiOiJTYW1pbmEiLCJsYXN0bmFtZSI6Ik1hbGlrIiwicGhvbmUiOiIrOTIzMzQ4ODA5ODQyIiwiZ2VuZGVyIjoiRmVtYWxlIiwiaWF0IjoxNjI0ODE0MDQ2LCJleHAiOjE2NTYzNTAwNDZ9._GI4seWD4HMZxLDh2Anq9d5g4YywwzVYUoq0yEU_-u4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:9091/discount/getsingleoffer/60e750b2037daf117404727a",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "9091",
+					"path": [
+						"discount",
+						"getsingleoffer",
+						"60e750b2037daf117404727a"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "filter offer",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MGQ3N2ZiM2Y3MTU0OTFhOTgyYjJiNzIiLCJmaXJzdG5hbWUiOiJTYW1pbmEiLCJsYXN0bmFtZSI6Ik1hbGlrIiwicGhvbmUiOiIrOTIzMzQ4ODA5ODQyIiwiZ2VuZGVyIjoiRmVtYWxlIiwiaWF0IjoxNjI0ODE0MDQ2LCJleHAiOjE2NTYzNTAwNDZ9._GI4seWD4HMZxLDh2Anq9d5g4YywwzVYUoq0yEU_-u4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"type\":\"Limited\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:9091/discount/filteroffer",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "9091",
+					"path": [
+						"discount",
+						"filteroffer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get single restaurant",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MGQ3N2ZiM2Y3MTU0OTFhOTgyYjJiNzIiLCJmaXJzdG5hbWUiOiJTYW1pbmEiLCJsYXN0bmFtZSI6Ik1hbGlrIiwicGhvbmUiOiIrOTIzMzQ4ODA5ODQyIiwiZ2VuZGVyIjoiRmVtYWxlIiwiaWF0IjoxNjI0ODE0MDQ2LCJleHAiOjE2NTYzNTAwNDZ9._GI4seWD4HMZxLDh2Anq9d5g4YywwzVYUoq0yEU_-u4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:9091/restaurant/60d8b1e9ae19101fa4cd331a",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "9091",
+					"path": [
+						"restaurant",
+						"60d8b1e9ae19101fa4cd331a"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getusers Copy",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://restupapis1.herokuapp.com/user",
+					"protocol": "https",
+					"host": [
+						"restupapis1",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get user by id",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MGQyMzE3Y2E0OTFlNzAzZTg2MDBiZWIiLCJlbWFpbCI6InNhbWluYUBnbWFpbC5jb20iLCJpbWFnZVVybCI6Imh0dHBzOi8vZXN0b3JlcHJvamVjdC5zMy5hbWF6b25hd3MuY29tL0h5ZHJhbmdlYXMuanBnIiwiaWF0IjoxNjI0NDc2MDQ2LCJleHAiOjE2NTYwMTIwNDZ9.Lszs8HQ1ZKesL3YIi9EhWgqwTL_gGxCqoxsyYA7QyrI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:9091/user/getbyid",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "9091",
+					"path": [
+						"user",
+						"getbyid"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add or update user image",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MGQ3N2ZiM2Y3MTU0OTFhOTgyYjJiNzIiLCJmaXJzdG5hbWUiOiJTYW1pbmEiLCJsYXN0bmFtZSI6Ik1hbGlrIiwicGhvbmUiOiIrOTIzMzQ4ODA5ODQyIiwiZ2VuZGVyIjoiRmVtYWxlIiwiaWF0IjoxNjI1MDgwMDQ2LCJleHAiOjE2NTY2MTYwNDZ9.g-7EJOMmI3y4yvsvuHLwJ7eTa7eoCJ9LrgGTPUwwIR8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "imageUrl",
+							"type": "file",
+							"src": "/C:/Users/Public/Pictures/Sample Pictures/Tulips.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "127.0.0.1:9091/user/adduserimage",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "9091",
+					"path": [
+						"user",
+						"adduserimage"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add review",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MGQ3N2ZiM2Y3MTU0OTFhOTgyYjJiNzIiLCJmaXJzdG5hbWUiOiJTYW1pbmEiLCJsYXN0bmFtZSI6Ik1hbGlrIiwicGhvbmUiOiIrOTIzMzQ4ODA5ODQyIiwiZ2VuZGVyIjoiRmVtYWxlIiwiaWF0IjoxNjI1MDgwMDQ2LCJleHAiOjE2NTY2MTYwNDZ9.g-7EJOMmI3y4yvsvuHLwJ7eTa7eoCJ9LrgGTPUwwIR8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"restaurantId\":\"60d8b1e9ae19101fa4cd331a\",\r\n\"review\":\"Good\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:9091/user/addreview",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "9091",
+					"path": [
+						"user",
+						"addreview"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get review by restaurant id",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MGQ3N2ZiM2Y3MTU0OTFhOTgyYjJiNzIiLCJmaXJzdG5hbWUiOiJTYW1pbmEiLCJsYXN0bmFtZSI6Ik1hbGlrIiwicGhvbmUiOiIrOTIzMzQ4ODA5ODQyIiwiZ2VuZGVyIjoiRmVtYWxlIiwiaWF0IjoxNjI1MDgwMDQ2LCJleHAiOjE2NTY2MTYwNDZ9.g-7EJOMmI3y4yvsvuHLwJ7eTa7eoCJ9LrgGTPUwwIR8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:9091/user/getreview/60d8b1e9ae19101fa4cd331a",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "9091",
+					"path": [
+						"user",
+						"getreview",
+						"60d8b1e9ae19101fa4cd331a"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "edit user",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MGQyMzE3Y2E0OTFlNzAzZTg2MDBiZWIiLCJlbWFpbCI6InNhbWluYUBnbWFpbC5jb20iLCJpbWFnZVVybCI6Imh0dHBzOi8vZXN0b3JlcHJvamVjdC5zMy5hbWF6b25hd3MuY29tL0h5ZHJhbmdlYXMuanBnIiwiaWF0IjoxNjI0NDc2MDQ2LCJleHAiOjE2NTYwMTIwNDZ9.Lszs8HQ1ZKesL3YIi9EhWgqwTL_gGxCqoxsyYA7QyrI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"phone\":\"44444\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:9091/user/edit/60d383538648d31a549cf286",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "9091",
+					"path": [
+						"user",
+						"edit",
+						"60d383538648d31a549cf286"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "edit restaurant",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MGQ3N2ZiM2Y3MTU0OTFhOTgyYjJiNzIiLCJmaXJzdG5hbWUiOiJTYW1pbmEiLCJsYXN0bmFtZSI6Ik1hbGlrIiwicGhvbmUiOiIrOTIzMzQ4ODA5ODQyIiwiZ2VuZGVyIjoiRmVtYWxlIiwiaWF0IjoxNjI0ODE0MDQ2LCJleHAiOjE2NTYzNTAwNDZ9._GI4seWD4HMZxLDh2Anq9d5g4YywwzVYUoq0yEU_-u4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"phone\":\"44444\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:9091/restaurant/edit/60d8b1e9ae19101fa4cd331a",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "9091",
+					"path": [
+						"restaurant",
+						"edit",
+						"60d8b1e9ae19101fa4cd331a"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete restaurant",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MGQ3N2ZiM2Y3MTU0OTFhOTgyYjJiNzIiLCJmaXJzdG5hbWUiOiJTYW1pbmEiLCJsYXN0bmFtZSI6Ik1hbGlrIiwicGhvbmUiOiIrOTIzMzQ4ODA5ODQyIiwiZ2VuZGVyIjoiRmVtYWxlIiwiaWF0IjoxNjI0ODE0MDQ2LCJleHAiOjE2NTYzNTAwNDZ9._GI4seWD4HMZxLDh2Anq9d5g4YywwzVYUoq0yEU_-u4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:9091/restaurant/delete/60d8b1e9ae19101fa4cd331a",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "9091",
+					"path": [
+						"restaurant",
+						"delete",
+						"60d8b1e9ae19101fa4cd331a"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "127.0.0.1:9091/signup/verifyotp",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"id\":\"60d77fb3f715491a982b2b72\",\r\n\"otp\":\"8537\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:9091/signup/verifyotp",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "9091",
+					"path": [
+						"signup",
+						"verifyotp"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "127.0.0.1:9091/signup/sendotp",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"phone\":\"+923348809842\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:9091/signup/sendotp",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "9091",
+					"path": [
+						"signup",
+						"sendotp"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "upload or update menu",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MGQ3N2ZiM2Y3MTU0OTFhOTgyYjJiNzIiLCJmaXJzdG5hbWUiOiJTYW1pbmEiLCJsYXN0bmFtZSI6Ik1hbGlrIiwicGhvbmUiOiIrOTIzMzQ4ODA5ODQyIiwiZ2VuZGVyIjoiRmVtYWxlIiwiaWF0IjoxNjI0ODE0MDQ2LCJleHAiOjE2NTYzNTAwNDZ9._GI4seWD4HMZxLDh2Anq9d5g4YywwzVYUoq0yEU_-u4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "menu",
+							"type": "file",
+							"src": "/D:/bscs 1/Programming Fundamental.docx"
+						}
+					]
+				},
+				"url": {
+					"raw": "127.0.0.1:9091/restaurant/menu/60d8b1e9ae19101fa4cd331a",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "9091",
+					"path": [
+						"restaurant",
+						"menu",
+						"60d8b1e9ae19101fa4cd331a"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add restaurant images",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MGQ3N2ZiM2Y3MTU0OTFhOTgyYjJiNzIiLCJmaXJzdG5hbWUiOiJTYW1pbmEiLCJsYXN0bmFtZSI6Ik1hbGlrIiwicGhvbmUiOiIrOTIzMzQ4ODA5ODQyIiwiZ2VuZGVyIjoiRmVtYWxlIiwiaWF0IjoxNjI0ODE0MDQ2LCJleHAiOjE2NTYzNTAwNDZ9._GI4seWD4HMZxLDh2Anq9d5g4YywwzVYUoq0yEU_-u4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "images",
+							"type": "file",
+							"src": "/C:/Users/Public/Pictures/Sample Pictures/Penguins.jpg"
+						},
+						{
+							"key": "images",
+							"type": "file",
+							"src": "/C:/Users/Public/Pictures/Sample Pictures/Jellyfish.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "127.0.0.1:9091/restaurant/pictures/60d8b1e9ae19101fa4cd331a",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "9091",
+					"path": [
+						"restaurant",
+						"pictures",
+						"60d8b1e9ae19101fa4cd331a"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
