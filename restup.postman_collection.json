@@ -6,7 +6,7 @@
 	},
 	"item": [
 		{
-			"name": "127.0.0.1:9091/signup",
+			"name": "https://r-up.herokuapp.com/signup",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -51,7 +51,7 @@
 					]
 				},
 				"url": {
-					"raw": "127.0.0.1:9091/signup",
+					"raw": "https://r-up.herokuapp.com/signup",
 					"host": [
 						"127",
 						"0",
@@ -152,7 +152,7 @@
 					]
 				},
 				"url": {
-					"raw": "127.0.0.1:9091/discount/create",
+					"raw": "https://r-up.herokuapp.com/discount/create",
 					"host": [
 						"127",
 						"0",
@@ -193,7 +193,7 @@
 					}
 				},
 				"url": {
-					"raw": "127.0.0.1:9091/restaurant/add",
+					"raw": "https://r-up.herokuapp.com/restaurant/add",
 					"host": [
 						"127",
 						"0",
@@ -224,7 +224,7 @@
 					}
 				},
 				"url": {
-					"raw": "127.0.0.1:9091/signup/completeprofile/60d77fb3f715491a982b2b72",
+					"raw": "https://r-up.herokuapp.com/signup/completeprofile/60d77fb3f715491a982b2b72",
 					"host": [
 						"127",
 						"0",
@@ -242,7 +242,7 @@
 			"response": []
 		},
 		{
-			"name": "127.0.0.1:9091/signin",
+			"name": "https://r-up.herokuapp.com/signin",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -256,7 +256,7 @@
 					}
 				},
 				"url": {
-					"raw": "127.0.0.1:9091/signin",
+					"raw": "https://r-up.herokuapp.com/signin",
 					"host": [
 						"127",
 						"0",
@@ -287,7 +287,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "127.0.0.1:9091/restaurant",
+					"raw": "https://r-up.herokuapp.com/restaurant",
 					"host": [
 						"127",
 						"0",
@@ -318,7 +318,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "127.0.0.1:9091/discount",
+					"raw": "https://r-up.herokuapp.com/discount",
 					"host": [
 						"127",
 						"0",
@@ -349,7 +349,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "127.0.0.1:9091/discount/getrestaurantoffers/60d8b1e9ae19101fa4cd331a",
+					"raw": "https://r-up.herokuapp.com/discount/getrestaurantoffers/60d8b1e9ae19101fa4cd331a",
 					"host": [
 						"127",
 						"0",
@@ -382,7 +382,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "127.0.0.1:9091/discount/getsingleoffer/60e750b2037daf117404727a",
+					"raw": "https://r-up.herokuapp.com/discount/getsingleoffer/60e750b2037daf117404727a",
 					"host": [
 						"127",
 						"0",
@@ -424,7 +424,7 @@
 					}
 				},
 				"url": {
-					"raw": "127.0.0.1:9091/discount/filteroffer",
+					"raw": "https://r-up.herokuapp.com/discount/filteroffer",
 					"host": [
 						"127",
 						"0",
@@ -456,7 +456,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "127.0.0.1:9091/restaurant/60d8b1e9ae19101fa4cd331a",
+					"raw": "https://r-up.herokuapp.com/restaurant/60d8b1e9ae19101fa4cd331a",
 					"host": [
 						"127",
 						"0",
@@ -478,7 +478,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://restupapis1.herokuapp.com/user",
+					"raw": "https://r-up.herokuapp.com/user",
 					"protocol": "https",
 					"host": [
 						"restupapis1",
@@ -508,7 +508,7 @@
 				"method": "POST",
 				"header": [],
 				"url": {
-					"raw": "127.0.0.1:9091/user/getbyid",
+					"raw": "https://r-up.herokuapp.com/user/getbyid",
 					"host": [
 						"127",
 						"0",
@@ -550,7 +550,7 @@
 					]
 				},
 				"url": {
-					"raw": "127.0.0.1:9091/user/adduserimage",
+					"raw": "https://r-up.herokuapp.com/user/adduserimage",
 					"host": [
 						"127",
 						"0",
@@ -591,7 +591,7 @@
 					}
 				},
 				"url": {
-					"raw": "127.0.0.1:9091/user/addreview",
+					"raw": "https://r-up.herokuapp.com/user/addreview",
 					"host": [
 						"127",
 						"0",
@@ -623,7 +623,7 @@
 				"method": "POST",
 				"header": [],
 				"url": {
-					"raw": "127.0.0.1:9091/user/getreview/60d8b1e9ae19101fa4cd331a",
+					"raw": "https://r-up.herokuapp.com/user/getreview/60d8b1e9ae19101fa4cd331a",
 					"host": [
 						"127",
 						"0",
@@ -665,7 +665,7 @@
 					}
 				},
 				"url": {
-					"raw": "127.0.0.1:9091/user/edit/60d383538648d31a549cf286",
+					"raw": "https://r-up.herokuapp.com/user/edit/60d383538648d31a549cf286",
 					"host": [
 						"127",
 						"0",
@@ -707,7 +707,7 @@
 					}
 				},
 				"url": {
-					"raw": "127.0.0.1:9091/restaurant/edit/60d8b1e9ae19101fa4cd331a",
+					"raw": "https://r-up.herokuapp.com/restaurant/edit/60d8b1e9ae19101fa4cd331a",
 					"host": [
 						"127",
 						"0",
@@ -740,7 +740,7 @@
 				"method": "PATCH",
 				"header": [],
 				"url": {
-					"raw": "127.0.0.1:9091/restaurant/delete/60d8b1e9ae19101fa4cd331a",
+					"raw": "https://r-up.herokuapp.com/restaurant/delete/60d8b1e9ae19101fa4cd331a",
 					"host": [
 						"127",
 						"0",
@@ -758,7 +758,7 @@
 			"response": []
 		},
 		{
-			"name": "127.0.0.1:9091/signup/verifyotp",
+			"name": "https://r-up.herokuapp.com/signup/verifyotp",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -772,7 +772,7 @@
 					}
 				},
 				"url": {
-					"raw": "127.0.0.1:9091/signup/verifyotp",
+					"raw": "https://r-up.herokuapp.com/signup/verifyotp",
 					"host": [
 						"127",
 						"0",
@@ -789,7 +789,7 @@
 			"response": []
 		},
 		{
-			"name": "127.0.0.1:9091/signup/sendotp",
+			"name": "https://r-up.herokuapp.com/signup/sendotp",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -803,7 +803,7 @@
 					}
 				},
 				"url": {
-					"raw": "127.0.0.1:9091/signup/sendotp",
+					"raw": "https://r-up.herokuapp.com/signup/sendotp",
 					"host": [
 						"127",
 						"0",
@@ -845,7 +845,7 @@
 					]
 				},
 				"url": {
-					"raw": "127.0.0.1:9091/restaurant/menu/60d8b1e9ae19101fa4cd331a",
+					"raw": "https://r-up.herokuapp.com/restaurant/menu/60d8b1e9ae19101fa4cd331a",
 					"host": [
 						"127",
 						"0",
@@ -893,7 +893,7 @@
 					]
 				},
 				"url": {
-					"raw": "127.0.0.1:9091/restaurant/pictures/60d8b1e9ae19101fa4cd331a",
+					"raw": "https://r-up.herokuapp.com/restaurant/pictures/60d8b1e9ae19101fa4cd331a",
 					"host": [
 						"127",
 						"0",
